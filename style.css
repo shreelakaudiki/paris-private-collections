@@ -711,3 +711,290 @@ footer span {
     }
 
 }
+/* =========================================
+   PARIS 1924 — POLISHED ARCHIVAL RECORD
+   ========================================= */
+
+.record-page {
+    max-width: 900px;
+    margin: 55px auto 0;
+    padding: 60px 65px;
+    background: #faf8f2;
+    border: 1px solid #c9c0b1;
+    box-shadow: 0 8px 30px rgba(23, 38, 61, 0.08);
+}
+
+/* Top heading */
+
+.record-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #c9c0b1;
+}
+
+.record-heading {
+    flex: 1;
+}
+
+.record-heading .eyebrow {
+    margin: 0 0 14px;
+    color: #a83245;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.record-heading h2 {
+    margin: 0;
+    color: #17263d;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.record-subtitle {
+    margin: 14px 0 0;
+    color: #777169;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* Large lot number */
+
+.record-number {
+    width: 105px;
+    margin-left: 45px;
+    padding-left: 25px;
+    border-left: 1px solid #c9c0b1;
+}
+
+.record-number span {
+    display: block;
+    color: #a83245;
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+
+.record-number strong {
+    display: block;
+    margin-top: 3px;
+    color: #17263d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    font-weight: normal;
+}
+
+/* Metadata */
+
+.record-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 35px 0 0;
+    border: 1px solid #c9c0b1;
+    background: #f0ebe1;
+}
+
+.record-meta div {
+    padding: 18px 20px;
+    border-right: 1px solid #c9c0b1;
+}
+
+.record-meta div:last-child {
+    border-right: none;
+}
+
+.record-meta span {
+    display: block;
+    margin-bottom: 7px;
+    color: #a83245;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.record-meta strong {
+    color: #303946;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* Divider */
+
+.record-divider {
+    height: 3px;
+    width: 45px;
+    margin: 45px 0;
+    background: #a83245;
+}
+
+/* Sections */
+
+.record-section {
+    margin-bottom: 38px;
+}
+
+.record-section .label,
+.record-registrar .label {
+    margin-bottom: 10px;
+    color: #1b3f73;
+    font-size: 9px;
+    letter-spacing: 2.5px;
+}
+
+.record-section > p:not(.label),
+.record-registrar > p:not(.label) {
+    max-width: 760px;
+    margin: 0;
+    color: #464b50;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* Status */
+
+.record-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 45px 0;
+    padding: 15px 20px;
+    border: 1px solid #b8ae9f;
+    background: #eee9df;
+}
+
+.record-status span {
+    color: #777169;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.record-status strong {
+    color: #1b3f73;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+/* Archival note */
+
+.record-registrar {
+    padding: 30px 0;
+    border-top: 1px solid #c9c0b1;
+    border-bottom: 1px solid #c9c0b1;
+}
+
+/* IMPORTANT PUZZLE CLUE */
+
+.paris-marginal {
+    position: relative;
+    margin-top: 42px;
+    padding: 25px 30px 28px;
+    background: #eee9df;
+    border-left: 4px solid #a83245;
+}
+
+.paris-marginal::before {
+    content: "PRIVATE ARCHIVE";
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    padding: 0 8px;
+    background: #faf8f2;
+    color: #a83245;
+    font-size: 7px;
+    letter-spacing: 2px;
+}
+
+.paris-marginal span {
+    display: block;
+    color: #1b3f73;
+    font-size: 8px;
+    letter-spacing: 2.5px;
+}
+
+.paris-marginal p {
+    max-width: 700px;
+    margin: 12px 0 0;
+    color: #55524d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* Footer inside document */
+
+.record-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid #c9c0b1;
+    color: #81796e;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+/* Back link */
+
+.back-link {
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+.back-link a {
+    color: #1b3f73;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+
+.back-link a:hover {
+    color: #a83245;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .record-page {
+        margin: 30px 20px 0;
+        padding: 35px 25px;
+    }
+
+    .record-top {
+        flex-direction: column;
+    }
+
+    .record-heading h2 {
+        font-size: 34px;
+    }
+
+    .record-number {
+        width: auto;
+        margin: 25px 0 0;
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .record-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .record-meta div {
+        border-right: none;
+        border-bottom: 1px solid #c9c0b1;
+    }
+
+    .record-meta div:last-child {
+        border-bottom: none;
+    }
+
+    .record-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
