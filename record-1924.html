@@ -28,9 +28,7 @@
 
         <div>
             <h1>Paris Private Collections</h1>
-            <p>
-                ARCHIVES · CATALOGUES · PRIVATE HOLDINGS
-            </p>
+            <p>ARCHIVES · CATALOGUES · PRIVATE HOLDINGS</p>
         </div>
 
     </div>
@@ -103,9 +101,7 @@
 
         <section class="record-section">
 
-            <p class="label">
-                DESCRIPTION
-            </p>
+            <p class="label">DESCRIPTION</p>
 
             <p id="description"></p>
 
@@ -114,9 +110,7 @@
 
         <section class="record-section">
 
-            <p class="label">
-                PROVENANCE
-            </p>
+            <p class="label">PROVENANCE</p>
 
             <p id="provenance"></p>
 
@@ -125,9 +119,7 @@
 
         <section class="record-section">
 
-            <p class="label">
-                CATALOGUE NOTE
-            </p>
+            <p class="label">CATALOGUE NOTE</p>
 
             <p id="catalogueNote"></p>
 
@@ -145,22 +137,18 @@
 
         <section class="record-registrar">
 
-            <p class="label">
-                ARCHIVAL NOTE
-            </p>
+            <p class="label">ARCHIVAL NOTE</p>
 
             <p id="registrarNote"></p>
 
         </section>
 
 
-        <!-- ONLY LOT 22 HAS THE MARGINAL NOTE -->
+        <!-- ONLY LOT 22 DISPLAYS THIS -->
 
         <section class="paris-marginal" id="marginalNote">
 
-            <span>
-                ARCHIVIST'S MARGINAL NOTE
-            </span>
+            <span>ARCHIVIST'S MARGINAL NOTE</span>
 
             <p>
                 <em>
@@ -176,9 +164,7 @@
 
             <span id="footerLot"></span>
 
-            <span>
-                PARIS PRIVATE COLLECTIONS
-            </span>
+            <span>PARIS PRIVATE COLLECTIONS</span>
 
         </div>
 
@@ -189,13 +175,9 @@
 
 <footer>
 
-    <div>
-        PARIS PRIVATE COLLECTIONS
-    </div>
+    <div>PARIS PRIVATE COLLECTIONS</div>
 
-    <span>
-        ARCHIVAL RECORDS · PARIS
-    </span>
+    <span>ARCHIVAL RECORDS · PARIS</span>
 
 </footer>
 
@@ -203,11 +185,8 @@
 <script>
 
 
-/* =========================================
-   1924 PRIVATE COLLECTION RECORDS
-   ========================================= */
-
 const records = {
+
 
     "18": {
 
@@ -393,25 +372,19 @@ const records = {
 };
 
 
-/* =========================================
-   READ LOT NUMBER FROM URL
-   ========================================= */
+/* Read the lot number from the URL */
 
 const params = new URLSearchParams(window.location.search);
 
 const lot = params.get("lot");
 
 
-/* =========================================
-   FIND THE CORRECT RECORD
-   ========================================= */
+/* Find the matching record */
 
 const record = records[lot];
 
 
-/* =========================================
-   DISPLAY THE RECORD
-   ========================================= */
+/* Display the record */
 
 if (record) {
 
@@ -448,9 +421,7 @@ if (record) {
 }
 
 
-/* =========================================
-   MARGINAL NOTE — LOT 22 ONLY
-   ========================================= */
+/* Hide the special note from every lot except Lot 22 */
 
 if (lot !== "22") {
 
@@ -460,9 +431,7 @@ if (lot !== "22") {
 }
 
 
-/* =========================================
-   INVALID LOT
-   ========================================= */
+/* Handle invalid lot numbers */
 
 if (!record) {
 
