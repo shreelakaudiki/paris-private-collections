@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paris Private Collections — Lot 22</title>
+
+    <title>Paris Private Collections — Record</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
+
     <div class="tricolour-line">
         <span class="blue"></span>
         <span class="white"></span>
@@ -17,25 +21,34 @@
     </div>
 
     <div class="header-content">
-        <div class="archive-mark">PPC</div>
+
+        <div class="archive-mark">
+            PPC
+        </div>
 
         <div>
             <h1>Paris Private Collections</h1>
-            <p>ARCHIVES · CATALOGUES · PRIVATE HOLDINGS</p>
+            <p>
+                ARCHIVES · CATALOGUES · PRIVATE HOLDINGS
+            </p>
         </div>
+
     </div>
 
     <nav>
         <a href="index.html">ARCHIVE</a>
         <a href="catalogue-1924.html">CATALOGUE</a>
     </nav>
+
 </header>
 
 
 <main>
 
     <div class="back-link">
-        <a href="catalogue-1924.html">← BACK TO 1924 CATALOGUE</a>
+        <a href="catalogue-1924.html">
+            ← BACK TO 1924 CATALOGUE
+        </a>
     </div>
 
 
@@ -45,19 +58,21 @@
 
             <div class="record-heading">
 
-                <p class="eyebrow">JEWELLERY · PRIVATE REGISTER</p>
+                <p class="eyebrow" id="category"></p>
 
-                <h2>Unidentified Crystal Jewel</h2>
+                <h2 id="title"></h2>
 
-                <p class="record-subtitle">
-                    Crystal surrounded by five diamonds
-                </p>
+                <p class="record-subtitle" id="subtitle"></p>
 
             </div>
 
+
             <div class="record-number">
+
                 <span>LOT</span>
-                <strong>22</strong>
+
+                <strong id="lotNumber"></strong>
+
             </div>
 
         </div>
@@ -66,18 +81,29 @@
         <div class="record-meta">
 
             <div>
+
                 <span>YEAR</span>
+
                 <strong>1924</strong>
+
             </div>
 
+
             <div>
+
                 <span>CATALOGUE</span>
+
                 <strong>PPC–1924–06</strong>
+
             </div>
 
+
             <div>
+
                 <span>REGISTER</span>
+
                 <strong>PRIVATE HOLDINGS</strong>
+
             </div>
 
         </div>
@@ -88,64 +114,66 @@
 
         <section class="record-section">
 
-            <p class="label">DESCRIPTION</p>
-
-            <p>
-                An unusually formed jewel consisting of a central crystal
-                surrounded by five diamonds. The object was presented without
-                a confirmed maker or previous catalogue title.
+            <p class="label">
+                DESCRIPTION
             </p>
+
+            <p id="description"></p>
 
         </section>
 
 
         <section class="record-section">
 
-            <p class="label">PROVENANCE</p>
-
-            <p>
-                Provenance unknown.
+            <p class="label">
+                PROVENANCE
             </p>
+
+            <p id="provenance"></p>
 
         </section>
 
 
         <section class="record-section">
 
-            <p class="label">CATALOGUE NOTE</p>
-
-            <p>
-                Object entered into the private register following examination.
+            <p class="label">
+                CATALOGUE NOTE
             </p>
+
+            <p id="catalogueNote"></p>
 
         </section>
 
 
         <div class="record-status">
 
-            <span>STATUS</span>
+            <span>
+                STATUS
+            </span>
 
-            <strong>RECORDED</strong>
+            <strong id="status"></strong>
 
         </div>
 
 
         <section class="record-registrar">
 
-            <p class="label">ARCHIVAL NOTE</p>
-
-            <p>
-                The object resembles an earlier jewel described in an English
-                private auction record dated 1911. No continuous provenance
-                could be established.
+            <p class="label">
+                ARCHIVAL NOTE
             </p>
+
+            <p id="registrarNote"></p>
 
         </section>
 
 
-        <section class="paris-marginal">
+        <!-- ONLY LOT 22 DISPLAYS THIS -->
 
-            <span>ARCHIVIST'S MARGINAL NOTE</span>
+        <section class="paris-marginal" id="marginalNote">
+
+            <span>
+                ARCHIVIST'S MARGINAL NOTE
+            </span>
 
             <p>
                 <em>
@@ -159,9 +187,11 @@
 
         <div class="record-footer">
 
-            <span>PPC / 1924 / 22</span>
+            <span id="footerLot"></span>
 
-            <span>PARIS PRIVATE COLLECTIONS</span>
+            <span>
+                PARIS PRIVATE COLLECTIONS
+            </span>
 
         </div>
 
@@ -172,11 +202,317 @@
 
 <footer>
 
-    <div>PARIS PRIVATE COLLECTIONS</div>
+    <div>
+        PARIS PRIVATE COLLECTIONS
+    </div>
 
-    <span>ARCHIVAL RECORDS · PARIS</span>
+    <span>
+        ARCHIVAL RECORDS · PARIS
+    </span>
 
 </footer>
+
+
+<script>
+
+
+/* =========================================
+   1924 RECORD DATABASE
+   ========================================= */
+
+const records = {
+
+
+    "18": {
+
+        category: "PERSONAL OBJECTS · PRIVATE REGISTER",
+
+        title: "Silver Dressing Case",
+
+        subtitle: "Engraved silver travelling case",
+
+        description:
+            "A silver dressing case containing several fitted compartments and engraved decorative details.",
+
+        provenance:
+            "Private collection.",
+
+        catalogueNote:
+            "Object examined and entered into the private register.",
+
+        status:
+            "RECORDED",
+
+        registrarNote:
+            "The available documentation contains no confirmed maker attribution."
+
+    },
+
+
+    "19": {
+
+        category: "JEWELLERY · PRIVATE REGISTER",
+
+        title: "Sapphire Dress Ring",
+
+        subtitle: "Sapphire and diamond ring",
+
+        description:
+            "A small dress ring set with a central sapphire surrounded by several smaller stones.",
+
+        provenance:
+            "Provenance unknown.",
+
+        catalogueNote:
+            "Object recorded following private examination.",
+
+        status:
+            "RECORDED",
+
+        registrarNote:
+            "No earlier catalogue reference was located."
+
+    },
+
+
+    "20": {
+
+        category: "OBJECTS · PRIVATE REGISTER",
+
+        title: "Art Deco Vanity Mirror",
+
+        subtitle: "Silver-framed dressing mirror",
+
+        description:
+            "A rectangular dressing mirror with a decorated silver-coloured frame.",
+
+        provenance:
+            "Private Parisian collection.",
+
+        catalogueNote:
+            "Object entered into the collection register.",
+
+        status:
+            "RECORDED",
+
+        registrarNote:
+            "Collection documentation was incomplete at the time of registration."
+
+    },
+
+
+    "21": {
+
+        category: "JEWELLERY · PRIVATE REGISTER",
+
+        title: "Diamond Pendant",
+
+        subtitle: "Small pendant with suspended stone",
+
+        description:
+            "A pendant featuring a central diamond mounted within a simple decorative setting.",
+
+        provenance:
+            "Private European collection.",
+
+        catalogueNote:
+            "Object examined and entered into the private register.",
+
+        status:
+            "RECORDED",
+
+        registrarNote:
+            "No continuous provenance was established."
+
+    },
+
+
+    "22": {
+
+        category: "JEWELLERY · PRIVATE REGISTER",
+
+        title: "Unidentified Crystal Jewel",
+
+        subtitle: "Crystal surrounded by five diamonds",
+
+        description:
+            "An unusually formed jewel consisting of a central crystal surrounded by five diamonds. The object was presented without a confirmed maker or previous catalogue title.",
+
+        provenance:
+            "Provenance unknown.",
+
+        catalogueNote:
+            "Object entered into the private register following examination.",
+
+        status:
+            "RECORDED",
+
+        registrarNote:
+            "The object resembles an earlier jewel described in an English private auction record dated 1911. No continuous provenance could be established."
+
+    },
+
+
+    "23": {
+
+        category: "JEWELLERY · PRIVATE REGISTER",
+
+        title: "Garnet Bracelet",
+
+        subtitle: "Garnet and gold bracelet",
+
+        description:
+            "A decorative bracelet composed of garnet stones mounted within a gold-coloured setting.",
+
+        provenance:
+            "Private collection.",
+
+        catalogueNote:
+            "Object entered into the private register following examination.",
+
+        status:
+            "RECORDED",
+
+        registrarNote:
+            "No earlier catalogue record was located."
+
+    },
+
+
+    "24": {
+
+        category: "PERSONAL OBJECTS · PRIVATE REGISTER",
+
+        title: "Enamelled Cigarette Case",
+
+        subtitle: "Decorated enamel case",
+
+        description:
+            "A small enamelled case decorated with geometric ornament and fitted with a hinged lid.",
+
+        provenance:
+            "Provenance unknown.",
+
+        catalogueNote:
+            "Object recorded among selected private holdings.",
+
+        status:
+            "RECORDED",
+
+        registrarNote:
+            "Available collection documentation was limited."
+
+    }
+
+};
+
+
+/* =========================================
+   READ LOT NUMBER FROM URL
+   ========================================= */
+
+const params = new URLSearchParams(window.location.search);
+
+const lot = params.get("lot");
+
+
+/* =========================================
+   FIND CORRECT RECORD
+   ========================================= */
+
+const record = records[lot];
+
+
+/* =========================================
+   DISPLAY RECORD
+   ========================================= */
+
+if (record) {
+
+    document.getElementById("category").textContent =
+        record.category;
+
+    document.getElementById("title").textContent =
+        record.title;
+
+    document.getElementById("subtitle").textContent =
+        record.subtitle;
+
+    document.getElementById("lotNumber").textContent =
+        lot;
+
+    document.getElementById("description").textContent =
+        record.description;
+
+    document.getElementById("provenance").textContent =
+        record.provenance;
+
+    document.getElementById("catalogueNote").textContent =
+        record.catalogueNote;
+
+    document.getElementById("status").textContent =
+        record.status;
+
+    document.getElementById("registrarNote").textContent =
+        record.registrarNote;
+
+    document.getElementById("footerLot").textContent =
+        "PPC / 1924 / " + lot;
+
+}
+
+
+/* =========================================
+   LOT 22 SPECIAL MARGINAL NOTE
+   ========================================= */
+
+if (lot !== "22") {
+
+    document.getElementById("marginalNote").style.display =
+        "none";
+
+}
+
+
+/* =========================================
+   INVALID LOT
+   ========================================= */
+
+if (!record) {
+
+    document.getElementById("category").textContent =
+        "PRIVATE REGISTER";
+
+    document.getElementById("title").textContent =
+        "Record Not Found";
+
+    document.getElementById("subtitle").textContent =
+        "No catalogue record corresponds to this lot.";
+
+    document.getElementById("lotNumber").textContent =
+        "—";
+
+    document.getElementById("description").textContent =
+        "The requested catalogue record could not be located.";
+
+    document.getElementById("provenance").textContent =
+        "Not recorded.";
+
+    document.getElementById("catalogueNote").textContent =
+        "No entry was found for the requested lot.";
+
+    document.getElementById("status").textContent =
+        "NOT FOUND";
+
+    document.getElementById("registrarNote").textContent =
+        "Please return to the 1924 catalogue and select a listed lot.";
+
+    document.getElementById("footerLot").textContent =
+        "PPC / 1924 / —";
+
+}
+
+</script>
 
 </body>
 </html>
