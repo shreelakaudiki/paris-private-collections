@@ -491,246 +491,30 @@ footer span {
         flex-wrap: wrap;
     }
 
-}
-/* ================================
-   1924 RECORD PAGE
-================================ */
+/* =========================================
+   PARIS 1924 — RECORD PAGE
+   ========================================= */
 
 .record-page {
-    max-width: 850px;
+    max-width: 900px;
     margin: 45px auto 0;
-    padding: 48px 52px;
-    background: #f8f5ee;
-    border-top: 3px double #9d9588;
-    border-bottom: 3px double #9d9588;
+    padding: 55px 60px;
+    background: #faf8f2;
+    border: 1px solid #c9c0b1;
+    box-shadow: 0 10px 28px rgba(23, 38, 61, 0.07);
 }
+
+
+/* =========================================
+   RECORD HEADER
+   ========================================= */
 
 .record-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-}
-
-.record-heading {
-    max-width: 680px;
-}
-
-.record-heading .eyebrow {
-    margin-bottom: 12px;
-}
-
-.record-heading h2 {
-    margin: 0;
-    color: #17263d;
-    font-size: 40px;
-    font-weight: normal;
-    line-height: 1.15;
-}
-
-.record-subtitle {
-    margin: 10px 0 0;
-    color: #6b665f;
-    font-size: 14px;
-    font-style: italic;
-}
-
-.record-number {
-    min-width: 85px;
-    padding-left: 25px;
-    border-left: 1px solid #c9c0b1;
-}
-
-.record-number span {
-    display: block;
-    color: #a83245;
-    font-size: 8px;
-    letter-spacing: 2px;
-}
-
-.record-number strong {
-    display: block;
-    margin-top: 5px;
-    color: #17263d;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 43px;
-    font-weight: normal;
-}
-
-.record-meta {
-    display: flex;
-    gap: 55px;
-    margin-top: 35px;
-    padding: 18px 0;
-    border-top: 1px solid #c9c0b1;
-    border-bottom: 1px solid #c9c0b1;
-}
-
-.record-meta div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.record-meta span {
-    color: #a83245;
-    font-size: 8px;
-    letter-spacing: 2px;
-}
-
-.record-meta strong {
-    color: #3e4650;
-    font-size: 11px;
-    font-weight: normal;
-}
-
-.record-divider {
-    height: 1px;
-    margin: 38px 0;
-    background: #c9c0b1;
-}
-
-.record-section {
-    margin-bottom: 30px;
-}
-
-.record-section > p:not(.label) {
-    max-width: 720px;
-    margin: 8px 0 0;
-    color: #4d514f;
-    font-size: 14px;
-    line-height: 1.85;
-}
-
-.record-status {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 6px;
-    margin: 5px 0 35px;
-    padding: 15px 24px;
-    background: #e7e0d3;
-    border: 1px solid #c3b9a8;
-}
-
-.record-status span {
-    color: #a83245;
-    font-size: 8px;
-    letter-spacing: 2px;
-}
-
-.record-status strong {
-    color: #1b3f73;
-    font-size: 14px;
-    font-weight: normal;
-    letter-spacing: 1px;
-}
-
-.record-registrar {
-    padding-top: 28px;
-    border-top: 1px solid #c9c0b1;
-}
-
-.record-registrar > p:not(.label) {
-    max-width: 720px;
-    margin: 8px 0 0;
-    color: #655f57;
-    font-size: 13px;
-    line-height: 1.8;
-}
-
-
-/* Recurring puzzle convention */
-
-.paris-marginal {
-    margin-top: 40px;
-    padding: 19px 23px;
-    background: #eee9df;
-    border-left: 3px solid #a83245;
-}
-
-.paris-marginal span {
-    display: block;
-    color: #1b3f73;
-    font-size: 8px;
-    letter-spacing: 2px;
-}
-
-.paris-marginal p {
-    margin: 10px 0 0;
-    color: #5e5a53;
-    font-family: "Courier New", monospace;
-    font-size: 13px;
-    font-style: italic;
-    line-height: 1.7;
-}
-
-.record-footer {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 42px;
-    padding-top: 18px;
-    border-top: 1px solid #c9c0b1;
-    color: #81796e;
-    font-size: 8px;
-    letter-spacing: 1.5px;
-}
-
-
-/* Mobile */
-
-@media (max-width: 700px) {
-
-    .record-page {
-        margin-top: 30px;
-        padding: 32px 25px;
-    }
-
-    .record-top {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .record-heading h2 {
-        font-size: 32px;
-    }
-
-    .record-number {
-        padding-left: 0;
-        border-left: none;
-    }
-
-    .record-meta {
-        gap: 25px;
-        flex-wrap: wrap;
-    }
-
-    .record-footer {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-}
-/* =========================================
-   PARIS 1924 — POLISHED ARCHIVAL RECORD
-   ========================================= */
-
-.record-page {
-    max-width: 900px;
-    margin: 55px auto 0;
-    padding: 60px 65px;
-    background: #faf8f2;
-    border: 1px solid #c9c0b1;
-    box-shadow: 0 8px 30px rgba(23, 38, 61, 0.08);
-}
-
-/* Top heading */
-
-.record-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 35px;
+    padding-bottom: 32px;
     border-bottom: 1px solid #c9c0b1;
 }
 
@@ -739,7 +523,7 @@ footer span {
 }
 
 .record-heading .eyebrow {
-    margin: 0 0 14px;
+    margin: 0 0 13px;
     color: #a83245;
     font-size: 9px;
     letter-spacing: 3px;
@@ -749,23 +533,25 @@ footer span {
 .record-heading h2 {
     margin: 0;
     color: #17263d;
-    font-size: 46px;
+    font-size: 44px;
     font-weight: normal;
-    line-height: 1.1;
+    line-height: 1.12;
 }
 
 .record-subtitle {
-    margin: 14px 0 0;
+    margin: 12px 0 0;
     color: #777169;
     font-size: 15px;
     font-style: italic;
 }
 
-/* Large lot number */
+
+/* =========================================
+   LOT NUMBER
+   ========================================= */
 
 .record-number {
-    width: 105px;
-    margin-left: 45px;
+    min-width: 95px;
     padding-left: 25px;
     border-left: 1px solid #c9c0b1;
 }
@@ -782,22 +568,25 @@ footer span {
     margin-top: 3px;
     color: #17263d;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 52px;
+    font-size: 50px;
     font-weight: normal;
 }
 
-/* Metadata */
+
+/* =========================================
+   RECORD METADATA
+   ========================================= */
 
 .record-meta {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 35px 0 0;
+    margin-top: 32px;
     border: 1px solid #c9c0b1;
-    background: #f0ebe1;
+    background: #eee9df;
 }
 
 .record-meta div {
-    padding: 18px 20px;
+    padding: 17px 20px;
     border-right: 1px solid #c9c0b1;
 }
 
@@ -815,53 +604,62 @@ footer span {
 
 .record-meta strong {
     color: #303946;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: normal;
 }
 
-/* Divider */
+
+/* =========================================
+   DIVIDER
+   ========================================= */
 
 .record-divider {
-    height: 3px;
     width: 45px;
-    margin: 45px 0;
+    height: 3px;
+    margin: 42px 0;
     background: #a83245;
 }
 
-/* Sections */
+
+/* =========================================
+   RECORD SECTIONS
+   ========================================= */
 
 .record-section {
-    margin-bottom: 38px;
+    margin-bottom: 34px;
 }
 
 .record-section .label,
 .record-registrar .label {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     color: #1b3f73;
     font-size: 9px;
     letter-spacing: 2.5px;
+    text-transform: uppercase;
 }
 
 .record-section > p:not(.label),
 .record-registrar > p:not(.label) {
-    max-width: 760px;
+    max-width: 740px;
     margin: 0;
     color: #464b50;
     font-size: 15px;
-    line-height: 1.9;
+    line-height: 1.85;
 }
 
-/* Status */
+
+/* =========================================
+   STATUS
+   ========================================= */
 
 .record-status {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 250px;
-    margin: 45px 0;
-    padding: 15px 20px;
-    border: 1px solid #b8ae9f;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 5px 0 38px;
+    padding: 14px 22px;
     background: #eee9df;
+    border: 1px solid #c3b9a8;
 }
 
 .record-status span {
@@ -872,34 +670,41 @@ footer span {
 
 .record-status strong {
     color: #1b3f73;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     letter-spacing: 2px;
 }
 
-/* Archival note */
+
+/* =========================================
+   ARCHIVAL NOTE
+   ========================================= */
 
 .record-registrar {
-    padding: 30px 0;
+    padding: 28px 0;
     border-top: 1px solid #c9c0b1;
     border-bottom: 1px solid #c9c0b1;
 }
 
-/* IMPORTANT PUZZLE CLUE */
+
+/* =========================================
+   MARGINAL NOTE
+   Recurring puzzle convention
+   ========================================= */
 
 .paris-marginal {
     position: relative;
-    margin-top: 42px;
-    padding: 25px 30px 28px;
+    margin-top: 38px;
+    padding: 25px 28px;
     background: #eee9df;
-    border-left: 4px solid #a83245;
+    border-left: 3px solid #a83245;
 }
 
 .paris-marginal::before {
     content: "PRIVATE ARCHIVE";
     position: absolute;
-    top: -9px;
-    left: 20px;
+    top: -8px;
+    left: 18px;
     padding: 0 8px;
     background: #faf8f2;
     color: #a83245;
@@ -912,11 +717,12 @@ footer span {
     color: #1b3f73;
     font-size: 8px;
     letter-spacing: 2.5px;
+    text-transform: uppercase;
 }
 
 .paris-marginal p {
     max-width: 700px;
-    margin: 12px 0 0;
+    margin: 11px 0 0;
     color: #55524d;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 15px;
@@ -924,24 +730,31 @@ footer span {
     line-height: 1.8;
 }
 
-/* Footer inside document */
+
+/* =========================================
+   RECORD FOOTER
+   ========================================= */
 
 .record-footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 45px;
-    padding-top: 20px;
+    gap: 20px;
+    margin-top: 40px;
+    padding-top: 18px;
     border-top: 1px solid #c9c0b1;
     color: #81796e;
     font-size: 8px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
-/* Back link */
+
+/* =========================================
+   BACK LINK
+   ========================================= */
 
 .back-link {
     max-width: 900px;
-    margin: 0 auto 20px;
+    margin: 0 auto 18px;
 }
 
 .back-link a {
@@ -956,7 +769,9 @@ footer span {
 }
 
 
-/* Mobile */
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 700px) {
 
@@ -967,6 +782,7 @@ footer span {
 
     .record-top {
         flex-direction: column;
+        gap: 25px;
     }
 
     .record-heading h2 {
@@ -974,8 +790,7 @@ footer span {
     }
 
     .record-number {
-        width: auto;
-        margin: 25px 0 0;
+        min-width: auto;
         padding-left: 0;
         border-left: none;
     }
@@ -995,6 +810,6 @@ footer span {
 
     .record-footer {
         flex-direction: column;
-        gap: 10px;
+        gap: 9px;
     }
 }
