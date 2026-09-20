@@ -81,29 +81,18 @@
         <div class="record-meta">
 
             <div>
-
                 <span>YEAR</span>
-
                 <strong>1924</strong>
-
             </div>
 
-
             <div>
-
                 <span>CATALOGUE</span>
-
                 <strong>PPC–1924–06</strong>
-
             </div>
 
-
             <div>
-
                 <span>REGISTER</span>
-
                 <strong>PRIVATE HOLDINGS</strong>
-
             </div>
 
         </div>
@@ -147,9 +136,7 @@
 
         <div class="record-status">
 
-            <span>
-                STATUS
-            </span>
+            <span>STATUS</span>
 
             <strong id="status"></strong>
 
@@ -167,7 +154,7 @@
         </section>
 
 
-        <!-- ONLY LOT 22 DISPLAYS THIS -->
+        <!-- ONLY LOT 22 HAS THE MARGINAL NOTE -->
 
         <section class="paris-marginal" id="marginalNote">
 
@@ -217,11 +204,10 @@
 
 
 /* =========================================
-   1924 RECORD DATABASE
+   1924 PRIVATE COLLECTION RECORDS
    ========================================= */
 
 const records = {
-
 
     "18": {
 
@@ -417,14 +403,14 @@ const lot = params.get("lot");
 
 
 /* =========================================
-   FIND CORRECT RECORD
+   FIND THE CORRECT RECORD
    ========================================= */
 
 const record = records[lot];
 
 
 /* =========================================
-   DISPLAY RECORD
+   DISPLAY THE RECORD
    ========================================= */
 
 if (record) {
@@ -463,7 +449,7 @@ if (record) {
 
 
 /* =========================================
-   LOT 22 SPECIAL MARGINAL NOTE
+   MARGINAL NOTE — LOT 22 ONLY
    ========================================= */
 
 if (lot !== "22") {
