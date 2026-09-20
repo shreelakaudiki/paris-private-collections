@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paris Private Collections — Archive</title>
+    <title>Paris Private Collections</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +19,6 @@
         <span class="white"></span>
         <span class="red"></span>
     </div>
-
 
     <div class="header-content">
 
@@ -37,7 +36,6 @@
 
     </div>
 
-
     <nav>
         <a href="index.html">ARCHIVE</a>
         <a href="#catalogues">CATALOGUES</a>
@@ -49,21 +47,20 @@
 
 <main>
 
-
     <section class="hero">
 
         <p class="eyebrow">
-            COLLECTIONS &amp; REGISTERS
+            PRIVATE COLLECTIONS ARCHIVE
         </p>
 
         <h2>
-            Paris Private<br>
-            Collections
+            Jewellery &amp;<br>
+            Precious Objects
         </h2>
 
         <p class="hero-text">
-            A digital record of selected objects, catalogues and
-            private collections preserved in Parisian archives.
+            A digital index of selected catalogues and private
+            collection records preserved in Paris.
         </p>
 
     </section>
@@ -74,32 +71,34 @@
         <div>
 
             <p class="label">
-                ARCHIVE SEARCH
+                ARCHIVE
             </p>
 
             <h3>
-                Browse by year
+                Paris Private Collections
             </h3>
 
         </div>
+
 
         <div class="search-box">
 
             <input
                 type="text"
-                placeholder="Enter year"
                 id="yearInput"
+                placeholder="Browse by year"
             >
 
-            <button onclick="searchArchive()">
+            <button onclick="searchYear()">
                 SEARCH
             </button>
 
         </div>
 
-        <p id="searchMessage" class="search-message"></p>
-
     </section>
+
+
+    <p id="searchMessage" class="search-message"></p>
 
 
     <section class="catalogues" id="catalogues">
@@ -107,17 +106,19 @@
         <div class="section-heading">
 
             <div>
+
                 <p class="label">
-                    ARCHIVAL RECORDS
+                    ARCHIVE CATALOGUES
                 </p>
 
                 <h3>
-                    Selected Catalogues
+                    Selected Years
                 </h3>
+
             </div>
 
             <span>
-                1890—1930
+                1918—1928
             </span>
 
         </div>
@@ -135,21 +136,22 @@
                 <div class="catalogue-info">
 
                     <p class="category">
-                        PRIVATE COLLECTIONS
+                        PRIVATE HOLDINGS
                     </p>
 
                     <h4>
-                        Decorative Arts &amp; Objects
+                        Jewellery &amp; Decorative Objects
                     </h4>
 
                     <span>
-                        Selected Parisian holdings
+                        Catalogue PPC–1918–02
                     </span>
 
                 </div>
 
-                <a href="catalogue-1918.html">VIEW CATALOGUE →</a>
-                
+                <a href="catalogue-1918.html">
+                    VIEW CATALOGUE →
+                </a>
 
             </article>
 
@@ -163,20 +165,22 @@
                 <div class="catalogue-info">
 
                     <p class="category">
-                        PAINTINGS
+                        PRIVATE HOLDINGS
                     </p>
 
                     <h4>
-                        Modern &amp; Classical Works
+                        Jewellery &amp; Personal Objects
                     </h4>
 
                     <span>
-                        Private European collections
+                        Catalogue PPC–1921–04
                     </span>
 
                 </div>
 
-                <a href="catalogue-1921.html">VIEW CATALOGUE →</a>
+                <a href="catalogue-1921.html">
+                    VIEW CATALOGUE →
+                </a>
 
             </article>
 
@@ -190,11 +194,11 @@
                 <div class="catalogue-info">
 
                     <p class="category">
-                        JEWELLERY &amp; PRECIOUS OBJECTS
+                        JEWELLERY
                     </p>
 
                     <h4>
-                        Private Jewellery Register
+                        Jewellery &amp; Precious Objects
                     </h4>
 
                     <span>
@@ -219,20 +223,22 @@
                 <div class="catalogue-info">
 
                     <p class="category">
-                        DECORATIVE ARTS
+                        PRIVATE HOLDINGS
                     </p>
 
                     <h4>
-                        Objects &amp; Interiors
+                        Decorative Arts &amp; Jewellery
                     </h4>
 
                     <span>
-                        Selected private holdings
+                        Catalogue PPC–1928–03
                     </span>
 
                 </div>
 
-               <a href="catalogue-1928.html">VIEW CATALOGUE →</a>
+                <a href="catalogue-1928.html">
+                    VIEW CATALOGUE →
+                </a>
 
             </article>
 
@@ -249,22 +255,21 @@
         </p>
 
         <h3>
-            Private records, preserved over time.
+            Private records, incomplete histories.
         </h3>
 
         <p>
-            Paris Private Collections maintains digitised records
-            of selected catalogues and inventories relating to
-            privately held works and objects.
+            Paris Private Collections preserves selected records
+            relating to objects held within private European
+            collections.
         </p>
 
         <p>
-            The archive includes catalogue entries, provenance
-            notes and historical collection records.
+            Catalogue entries were not always accompanied by
+            complete provenance documentation.
         </p>
 
     </section>
-
 
 </main>
 
@@ -284,7 +289,7 @@
 
 <script>
 
-function searchArchive() {
+function searchYear() {
 
     const year =
         document.getElementById("yearInput").value.trim();
@@ -293,31 +298,40 @@ function searchArchive() {
         document.getElementById("searchMessage");
 
 
-    if (year === "1924") {
+    if (year === "1918") {
 
-        window.location.href =
-            "catalogue-1924.html";
+        window.location.href = "catalogue-1918.html";
 
-        return;
     }
 
+    else if (year === "1921") {
 
-    if (year === "") {
+        window.location.href = "catalogue-1921.html";
+
+    }
+
+    else if (year === "1924") {
+
+        window.location.href = "catalogue-1924.html";
+
+    }
+
+    else if (year === "1928") {
+
+        window.location.href = "catalogue-1928.html";
+
+    }
+
+    else {
 
         message.textContent =
-            "Please enter a year.";
+            "No catalogue was found for that year.";
 
-        return;
     }
-
-
-    message.textContent =
-        "No catalogue records were found for this year.";
 
 }
 
 </script>
 
 </body>
-
 </html>
